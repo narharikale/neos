@@ -1,0 +1,169 @@
+{
+  "pullRequest": {
+    "title": "docs: fix typo in CSS selector #6928",
+    "status": "Merged",
+    "mergeInfo": {
+      "user": "kodiakhq",
+      "action": "merged 1 commit into",
+      "targetBranch": "shadcn-ui:main",
+      "sourceBranch": "Yordanlliev2002:main",
+      "timestamp": "on Mar 17"
+    },
+    "actions": [
+      {
+        "type": "tab",
+        "name": "Conversation",
+        "count": 3,
+        "isActive": true
+      },
+      {
+        "type": "tab",
+        "name": "Commits",
+        "count": 1,
+        "isActive": false
+      },
+      {
+        "type": "tab",
+        "name": "Checks",
+        "count": 5,
+        "isActive": false
+      },
+      {
+        "type": "tab",
+        "name": "Files changed",
+        "count": 1,
+        "isActive": false
+      }
+    ],
+    "codeButton": {
+      "text": "Code",
+      "icon": "angle-brackets"
+    },
+    "fileChanges": {
+      "additions": 1,
+      "deletions": 1
+    }
+  },
+  "timeline": [
+    {
+      "type": "comment",
+      "user": {
+        "name": "YordanIliev2002",
+        "avatar": "image_url_placeholder_yordaniliev2002"
+      },
+      "timestamp": "commented on Mar 14",
+      "role": "Contributor",
+      "body": "There was a typo",
+      "reactions": []
+    },
+    {
+      "type": "bot_message",
+      "user": {
+        "name": "vercel",
+        "avatar": "image_url_placeholder_vercel_bot",
+        "tag": "bot"
+      },
+      "timestamp": "commented on Mar 14",
+      "body": "@YordanIliev2002 is attempting to deploy a commit to the shadcn-pro Team on Vercel.",
+      "details": "A member of the Team first needs to authorize it."
+    },
+    {
+      "type": "event",
+      "user": {
+        "name": "YordanIliev2002",
+        "avatar": "image_url_placeholder_yordaniliev2002"
+      },
+      "action": "changed the title",
+      "oldTitle": "fix css selector for Zinc theme in website docs: typo in CSS selector",
+      "newTitle": "docs: fix typo in CSS selector",
+      "timestamp": "on Mar 14"
+    },
+    {
+      "type": "commit_reference",
+      "icon": "check_circle",
+      "text": "docs: fix typo in CSS selector",
+      "commitId": "5672857"
+    },
+    {
+      "type": "event",
+      "user": {
+        "name": "YordanIliev2002",
+        "avatar": "image_url_placeholder_yordaniliev2002"
+      },
+      "action": "changed the title",
+      "oldTitle": "docs: typo in CSS selector",
+      "newTitle": "docs: fix typo in CSS selector",
+      "timestamp": "on Mar 14"
+    },
+    {
+      "type": "push_event",
+      "user": {
+        "name": "YordanIliev2002",
+        "avatar": "image_url_placeholder_yordaniliev2002"
+      },
+      "action": "force-pushed the",
+      "branch": "main",
+      "targetBranch": "26c1149",
+      "commitId": "5a72857",
+      "timestamp": "2 months ago",
+      "compareLink": "Compare"
+    },
+    {
+      "type": "approval",
+      "user": {
+        "name": "jacksonmills",
+        "avatar": "image_url_placeholder_jacksonmills"
+      },
+      "action": "approved these changes",
+      "timestamp": "on Mar 15",
+      "viewChangesButton": "View reviewed changes"
+    }
+  ],
+  "sidebar": {
+    "reviewers": [
+      {
+        "user": "shadcn",
+        "avatar": "image_url_placeholder_shadcn",
+        "status": "approved"
+      },
+      {
+        "user": "jacksonmills",
+        "avatar": "image_url_placeholder_jacksonmills",
+        "status": "approved"
+      },
+      {
+        "user": "matevegh",
+        "avatar": "image_url_placeholder_matevegh",
+        "status": "pending"
+      }
+    ],
+    "assignees": {
+      "text": "No one assigned"
+    },
+    "labels": [
+      {
+        "name": "automerge",
+        "color": "green"
+      }
+    ],
+    "projects": {
+      "text": "None yet"
+    },
+    "milestone": {
+      "text": "No milestone"
+    },
+    "development": {
+      "status": "Successfully merging this pull request may close these issues.",
+      "issuesLink": "None yet"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "customizeButton": "Customize",
+      "subscribeButton": {
+        "text": "Subscribe",
+        "icon": "bell"
+      },
+      "reason": "You’re not receiving notifications from this thread."
+    }
+  }
+}

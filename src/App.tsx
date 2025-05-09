@@ -1,12 +1,7 @@
 import "./App.css";
 
 function App() {
-  return (
-    <>
-      <p>another diw</p>
-      <h1>this oss sdflsfsf fflsksf fflkskdfs fs fjsdfsf </h1>
-    </>
-  );
+  return <></>;
 }
 
 export default App;
