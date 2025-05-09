@@ -1,0 +1,9 @@
+#root {
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
