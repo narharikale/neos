@@ -1,7 +1,12 @@
 import "./App.css";
+import PullRequest from "./components/pages/PullRequest";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <PullRequest />
+    </>
+  );
 }
 
 export default App;
