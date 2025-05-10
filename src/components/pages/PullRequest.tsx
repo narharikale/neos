@@ -1,9 +1,14 @@
-import Header from "../templates/Header";
+import { Header, MobileHeader } from "../templates/Header";
 
 function PullRequest() {
   return (
     <>
-      <Header />
+      <div className="hidden xl:block">
+        <Header />
+      </div>
+      <div className="block xl:hidden">
+        <MobileHeader />
+      </div>
     </>
   );
 }
