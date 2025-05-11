@@ -1,6 +1,7 @@
 {
   "pullRequest": {
-    "title": "docs: fix typo in CSS selector #6928",
+    "title": "docs: fix typo in CSS selector",
+    "id": 6938,
     "status": "Merged",
     "mergeInfo": {
       "user": "kodiakhq",

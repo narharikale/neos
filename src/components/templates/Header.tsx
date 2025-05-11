@@ -1,8 +1,8 @@
-import { Menu, Search, SlidersHorizontal } from "lucide-react";
+import { SearchIcon, SlidersIcon, ThreeBarsIcon } from "@primer/octicons-react";
 
 function Header() {
   return (
-    <nav className="flex items-center justify-between text-xl px-8 py-4 bg-zinc-800 text-white h-full w-full">
+    <nav className="flex items-center justify-between text-base px-8 py-4 bg-zinc-800 text-white h-full w-full">
       <div className="flex items-center gap-8 h-full ">
         <img className="w-8 h-8" src="/github-mark-white.svg" />
 
@@ -18,7 +18,7 @@ function Header() {
       <div className="flex items-center gap-3 h-full">
         <div className="hidden 2xl:flex items-center justify-between xl:w-sm p-2 h-9 text-sm text-white border-1 border-neutral-400 rounded-md">
           <div className="flex gap-2 items-center">
-            <Search className="text-gray-600" />
+            <SearchIcon className="text-gray-600" size={16} />
             <p className=" text-neutral-400">Search or jump to...</p>
           </div>
 
@@ -28,7 +28,7 @@ function Header() {
         </div>
 
         <div className="flex 2xl:hidden">
-          <Search className="text-gray-600" />
+          <SearchIcon className="text-gray-600" size={16} />
         </div>
 
         <button className="px-3">Sign in</button>
@@ -37,7 +37,7 @@ function Header() {
         </button>
 
         <button className="flex p-2 border-1 rounded-lg border-gray-300">
-          <SlidersHorizontal />
+          <SlidersIcon size={16} />
         </button>
       </div>
     </nav>
@@ -49,7 +49,7 @@ function MobileHeader() {
     <nav className="flex items-center justify-between text-xl px-8 py-4 bg-zinc-800 text-white h-full w-full">
       <div>
         <button>
-          <Menu size={28} />
+          <ThreeBarsIcon size={28} />
         </button>
       </div>
       <div className="flex items-center gap-8 h-full ">
