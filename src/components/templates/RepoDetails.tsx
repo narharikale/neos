@@ -98,6 +98,7 @@ function Tabs() {
         {navData.map((tab) => {
           return (
             <li
+              key={tab.name}
               className={clsx(
                 "pb-2",
                 tab.active ? "border-b-3 border-[#fd8c73]" : ""

@@ -9,11 +9,12 @@ import {
 
 function PrTabs() {
   return (
-    <div className="w-full border-b text-gray-600 dark:text-gray-400 border-gray-300 dark:border-gray-500 flex items-center justify-between">
+    <div className="w-full mb-4  border-b text-gray-600 dark:text-gray-400 border-gray-300 dark:border-gray-500 flex items-center justify-between">
       <ol className="list-none flex gap-2">
         {tabs.map((tab) => {
           return (
             <li
+              key={tab.content}
               className={clsx(
                 "flex text-sm items-center gap-1 px-4 py-2 rounded-t-md ",
                 tab.active

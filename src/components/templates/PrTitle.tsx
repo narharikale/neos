@@ -23,7 +23,7 @@ function PrTitle() {
           <GitMergeIcon size={14} />
           <span className="ml-1">{data.pullRequest.status}</span>
         </div>
-        <p className="flex item-center gap-1 text-sm dark:text-gray-400 text-gray-600">
+        <div className="flex item-center gap-1 text-sm dark:text-gray-400 text-gray-600">
           <span className="font-bold">{mergeInfo.user}</span>
           <span>{mergeInfo.action}</span>
           <CodePill content={mergeInfo.targetBranch} />
@@ -33,7 +33,7 @@ function PrTitle() {
             <CopyIcon size={14} />
           </button>
           <span>{mergeInfo.timestamp}</span>
-        </p>
+        </div>
       </div>
     </div>
   );

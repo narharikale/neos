@@ -9,48 +9,15 @@
       "targetBranch": "shadcn-ui:main",
       "sourceBranch": "Yordanlliev2002:main",
       "timestamp": "on Mar 17"
-    },
-    "actions": [
-      {
-        "type": "tab",
-        "name": "Conversation",
-        "count": 3,
-        "isActive": true
-      },
-      {
-        "type": "tab",
-        "name": "Commits",
-        "count": 1,
-        "isActive": false
-      },
-      {
-        "type": "tab",
-        "name": "Checks",
-        "count": 5,
-        "isActive": false
-      },
-      {
-        "type": "tab",
-        "name": "Files changed",
-        "count": 1,
-        "isActive": false
-      }
-    ],
-    "codeButton": {
-      "text": "Code",
-      "icon": "angle-brackets"
-    },
-    "fileChanges": {
-      "additions": 1,
-      "deletions": 1
     }
   },
   "timeline": [
     {
-      "type": "comment",
+      "id": 123,
+      "type": "user_comment",
       "user": {
         "name": "YordanIliev2002",
-        "avatar": "image_url_placeholder_yordaniliev2002"
+        "avatar": "https://avatars.githubusercontent.com/u/15782156?s=60&v=4"
       },
       "timestamp": "commented on Mar 14",
       "role": "Contributor",
@@ -58,113 +25,207 @@
       "reactions": []
     },
     {
-      "type": "bot_message",
+      "id": 124,
+      "type": "bot_comment",
       "user": {
         "name": "vercel",
-        "avatar": "image_url_placeholder_vercel_bot",
+        "avatar": "https://avatars.githubusercontent.com/in/8329?s=80&v=4",
         "tag": "bot"
       },
       "timestamp": "commented on Mar 14",
-      "body": "@YordanIliev2002 is attempting to deploy a commit to the shadcn-pro Team on Vercel.",
-      "details": "A member of the Team first needs to authorize it."
+      "body": "@YordanIliev2002 is attempting to deploy a commit to the shadcn-pro Team on Vercel."
     },
     {
-      "type": "event",
+      "id": 125,
+      "type": "change_event",
       "user": {
         "name": "YordanIliev2002",
-        "avatar": "image_url_placeholder_yordaniliev2002"
+        "avatar": "https://avatars.githubusercontent.com/u/15782156?s=40&u=69b8f091a6a7499450bb94a9a1452bba54356da6&v=4"
       },
       "action": "changed the title",
-      "oldTitle": "fix css selector for Zinc theme in website docs: typo in CSS selector",
-      "newTitle": "docs: fix typo in CSS selector",
+      "body": "<p> <span style='text-decoration: line-through'>Fix css selector for Zinc theme in website</span> docs: typo in CSS select</p>",
       "timestamp": "on Mar 14"
     },
     {
-      "type": "commit_reference",
+      "id": 126,
+      "type": "commit_event",
+      "user": {
+        "name": "YordanIliev2002",
+        "avatar": "https://avatars.githubusercontent.com/u/15782156?s=40&u=69b8f091a6a7499450bb94a9a1452bba54356da6&v=4"
+      },
       "icon": "check_circle",
-      "text": "docs: fix typo in CSS selector",
-      "commitId": "5672857"
+      "body": "<code> docs: fix typo in CSS selector</pre>",
+      "button": {
+        "type": "commit",
+        "content": "5a72857"
+      }
     },
     {
-      "type": "event",
+      "id": 127,
+      "type": "change_event",
       "user": {
         "name": "YordanIliev2002",
-        "avatar": "image_url_placeholder_yordaniliev2002"
+        "avatar": "https://avatars.githubusercontent.com/u/15782156?s=40&u=69b8f091a6a7499450bb94a9a1452bba54356da6&v=4"
       },
       "action": "changed the title",
-      "oldTitle": "docs: typo in CSS selector",
-      "newTitle": "docs: fix typo in CSS selector",
+      "body": "<p><span style='text-decoration: line-through'>docs: typo in CSS selector</span> docs: fix typo in CSS selector </p>",
       "timestamp": "on Mar 14"
     },
     {
+      "id": 128,
       "type": "push_event",
       "user": {
         "name": "YordanIliev2002",
-        "avatar": "image_url_placeholder_yordaniliev2002"
+        "avatar": "https://avatars.githubusercontent.com/u/15782156?s=40&u=69b8f091a6a7499450bb94a9a1452bba54356da6&v=4"
       },
       "action": "force-pushed the",
-      "branch": "main",
-      "targetBranch": "26c1149",
-      "commitId": "5a72857",
+      "body": "<div><span style='font-size:12px; background-color: #DDF4FF; color: #59636E; padding: 2px; border-radius: 4px;'>main</span> branch from <code>26c1149</code> to <code>5a72857</code></div>",
       "timestamp": "2 months ago",
-      "compareLink": "Compare"
+      "compareLink": "Compare",
+      "button": {
+        "type": "text",
+        "content": "Compare"
+      }
     },
     {
-      "type": "approval",
+      "id": 129,
+      "type": "approve_event",
       "user": {
-        "name": "jacksonmills",
-        "avatar": "image_url_placeholder_jacksonmills"
+        "name": "Jacksonmills",
+        "avatar": "https://avatars.githubusercontent.com/u/19780885?s=60&v=4"
       },
       "action": "approved these changes",
       "timestamp": "on Mar 15",
-      "viewChangesButton": "View reviewed changes"
-    }
-  ],
-  "sidebar": {
-    "reviewers": [
-      {
-        "user": "shadcn",
-        "avatar": "image_url_placeholder_shadcn",
-        "status": "approved"
-      },
-      {
-        "user": "jacksonmills",
-        "avatar": "image_url_placeholder_jacksonmills",
-        "status": "approved"
-      },
-      {
-        "user": "matevegh",
-        "avatar": "image_url_placeholder_matevegh",
-        "status": "pending"
+      "button": {
+        "type": "text",
+        "content": "View reviewed changes"
       }
-    ],
-    "assignees": {
-      "text": "No one assigned"
     },
-    "labels": [
-      {
-        "name": "automerge",
-        "color": "green"
-      }
-    ],
-    "projects": {
-      "text": "None yet"
-    },
-    "milestone": {
-      "text": "No milestone"
-    },
-    "development": {
-      "status": "Successfully merging this pull request may close these issues.",
-      "issuesLink": "None yet"
-    },
-    "notifications": {
-      "title": "Notifications",
-      "customizeButton": "Customize",
-      "subscribeButton": {
-        "text": "Subscribe",
-        "icon": "bell"
+    {
+      "id": 130,
+      "type": "approve_event",
+      "user": {
+        "name": "matevegh",
+        "avatar": "https://avatars.githubusercontent.com/u/30011773?s=60&v=4"
       },
-      "reason": "You’re not receiving notifications from this thread."
+      "action": "approved these changes",
+      "timestamp": "on Mar 16",
+      "button": {
+        "type": "text",
+        "content": "View reviewed changes"
+      }
+    },
+    {
+      "id": 130,
+      "type": "approve_event",
+      "isReviewComment": true,
+      "user": {
+        "name": "shadcn",
+        "avatar": "https://avatars.githubusercontent.com/u/124599?s=60&v=4"
+      },
+      "action": "approved these changes",
+      "timestamp": "on Mar 16",
+      "button": {
+        "type": "text",
+        "content": "View reviewed changes"
+      }
+    },
+    {
+      "id": 131,
+      "type": "review_comment",
+      "user": {
+        "name": "shadcn",
+        "avatar": "https://avatars.githubusercontent.com/u/124599?s=60&v=4"
+      },
+      "isReviewComment": true,
+      "role": "Collaborator",
+      "action": "left a comment",
+      "timestamp": "on Mar 15",
+      "button": {
+        "type": "text",
+        "content": "View reviewed changes"
+      },
+      "body": "Thank you",
+      "reactions": [
+        {
+          "heart": "2"
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "type": "bot_comment",
+      "user": {
+        "name": "vercel",
+        "avatar": "https://avatars.githubusercontent.com/in/8329?s=80&v=4",
+        "tag": "bot"
+      },
+      "timestamp": "commented on Mar 14",
+      "body": "@YordanIliev2002 is attempting to deploy a commit to the shadcn-pro Team on Vercel."
+    },
+    {
+      "id": 135,
+      "type": "deploy_event",
+      "user": {
+        "tag": "bot",
+        "name": "vercel",
+        "avatar": "https://avatars.githubusercontent.com/in/8329?s=80&v=4"
+      },
+
+      "action": "deployed to",
+      "body": "Preview-ui ",
+      "timestamp": "2 months ago",
+      "button": {
+        "type": "secondary",
+        "content": "View deployment"
+      }
+    },
+    {
+      "id": 136,
+      "type": "tag_event",
+      "user": {
+        "name": "matevegh",
+        "avatar": "https://avatars.githubusercontent.com/u/30011773?s=60&v=4"
+      },
+      "action": "added the",
+      "body": "automerge",
+      "timestamp": "on Mar 17"
+    },
+    {
+      "id": 138,
+      "type": "deploy_event",
+      "user": {
+        "tag": "bot",
+        "name": "vercel",
+        "avatar": "https://avatars.githubusercontent.com/in/8329?s=80&v=4"
+      },
+      "action": "deployed to",
+      "body": "Preview-v4 ",
+      "tag": "bot",
+      "timestamp": "2 months ago",
+      "button": {
+        "type": "secondary",
+        "content": "View deployment"
+      }
+    },
+    {
+      "id": 139,
+      "type": "merge_event",
+
+      "user": {
+        "tag": "bot",
+        "name": "kodiahq",
+        "avatar": "https://avatars.githubusercontent.com/in/29196?s=40&v=4"
+      },
+      "action": "merged commit",
+      "commitId": "61e21e3",
+      "body": "into",
+      "desription": "7 checks passed",
+      "timestamp": "on Mar 16",
+      "button": {
+        "type": "secondary",
+        "content": "View details"
+      }
     }
-  }
+  ]
 }
