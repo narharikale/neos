@@ -3,7 +3,7 @@ import { SearchIcon, SlidersIcon, ThreeBarsIcon } from "@primer/octicons-react";
 function Header() {
   return (
     <nav className="flex items-center justify-between text-base px-8 py-4 bg-zinc-800 text-white h-full w-full">
-      <div className="flex items-center gap-8 h-full ">
+      <div className="flex items-center gap-5 h-full ">
         <img className="w-8 h-8" src="/github-mark-white.svg" />
 
         <ul className="flex text-white list-none">
@@ -31,8 +31,8 @@ function Header() {
           <SearchIcon className="text-gray-600" size={16} />
         </div>
 
-        <button className="px-3">Sign in</button>
-        <button className="px-3 py-1 border-1 rounded-md border-gray-300">
+        <button className="px-3 text-sm ">Sign in</button>
+        <button className="px-3 py-1 text-sm border-1 rounded-md border-gray-300">
           Sign up
         </button>
 

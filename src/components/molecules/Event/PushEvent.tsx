@@ -32,21 +32,24 @@ function PushEvent(props: Props) {
       <div className="flex items-center text-sm gap-1.5">
         <IconBadge
           icon={<RepoPushIcon size={16} />}
-          className="bg-gray-100 text-gray-600"
+          className="dark:bg-gray-800/50 dark:text-gray-400 bg-gray-100 text-gray-600"
         />
         <div className="inline-flex">
           <Avatar url={data?.user?.avatar} imgClassName="w-5 h-5" />
-          <p className="font-medium mr-1">{data?.user?.name} </p>
-          <p className="mr-1 underline">{data?.action} </p>
+          <p className="font-medium mr-1 dark:text-gray-400">
+            {data?.user?.name}{" "}
+          </p>
+          <p className="mr-1 underline dark:text-gray-400">{data?.action} </p>
           <div
+            className="dark:text-gray-400"
             dangerouslySetInnerHTML={{
               __html: data.body,
             }}
           />
-          <p> {data?.timestamp}</p>
+          <p className="dark:text-gray-400"> {data?.timestamp}</p>
         </div>
       </div>
-      <button className="text-xs hover:bg-gray-100 font-medium px-2 rounded-sm">
+      <button className="text-xs hover:bg-gray-100 font-medium px-2 rounded-sm dark:text-gray-400">
         {data.button?.content}
       </button>
     </div>

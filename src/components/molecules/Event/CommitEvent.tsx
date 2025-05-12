@@ -33,19 +33,19 @@ function ChangeEvent(props: Props) {
       <div className="flex items-center text-xs gap-1.5">
         <IconBadge
           icon={<GitCommitIcon size={16} />}
-          className="bg-transparent text-gray-600"
+          className="bg-transparent dark:text-gray-400 text-gray-600"
         />
         <div className="inline-flex">
           <Avatar url={data?.user?.avatar} imgClassName="w-5 h-5" />
           <div
-            className="ml-1"
+            className="ml-1 dark:text-gray-400"
             dangerouslySetInnerHTML={{
               __html: data.body,
             }}
           />
         </div>
       </div>
-      <a className="text-xs font-medium px-2 rounded-sm flex items-center">
+      <a className="text-xs font-medium px-2 rounded-sm flex items-center dark:text-gray-400">
         <CheckIcon className="text-green-700 mr-1" size={14} />
         <pre className="text-gray-500">{data.button.content}</pre>
       </a>

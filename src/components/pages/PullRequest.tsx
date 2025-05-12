@@ -1,3 +1,4 @@
+import Footer from "../templates/Footer";
 import { Header, MobileHeader } from "../templates/Header";
 import RepoHeader from "../templates/RepoDetails";
 import Timeline from "../templates/Timeline";
@@ -13,6 +14,7 @@ function PullRequest() {
       </div>
       <RepoHeader />
       <Timeline />
+      <Footer />
     </main>
   );
 }

@@ -52,35 +52,41 @@ function GenericEvent(props: Props) {
         )}
         <div className="inline-flex">
           <Avatar url={data?.user?.avatar} imgClassName="w-5 h-5" />
-          <p className="font-medium ml-1 mr-1">{data?.user?.name} </p>
+          <p className="font-medium ml-1 mr-1 dark:text-white">
+            {data?.user?.name}{" "}
+          </p>
           {data.user.tag ? (
             <Pill
               className="dark:transparent dark:text-gray-500 dark:border-gray-500 border-gray-300 border text-xs text-gray-700 font-medium px-0 ml-1"
               content={data.user.tag}
             />
           ) : null}
-          <p className="mr-1 flex items-center">{data?.action} </p>
+          <p className="mr-1 flex items-center dark:text-gray-400">
+            {data?.action}{" "}
+          </p>
           {type === "deploy" && (
-            <span className="text-gray-950">{data.body}</span>
+            <span className="dark:text-white text-gray-950">{data.body}</span>
           )}
 
           {type === "tag" && (
             <Pill
-              className="dark:transparent dark:text-gray-500 bg-green-700 border text-xs text-white font-medium px-0 ml-1"
+              className="dark:transparent  bg-green-700 border text-xs text-white font-medium px-0 ml-1"
               content={data.body}
             />
           )}
           {type === "merge" && (
             <div className="flex items-center">
-              <code className="text-xs mr-1">{data.commitId}</code>
+              <code className="text-xs mr-1 dark:text-gray-400">
+                {data.commitId}
+              </code>
               <CodePill content="shadcn-ui:main" />
             </div>
           )}
-          <p className="ml-1"> {data?.timestamp}</p>
+          <p className="ml-1 dark:text-gray-400"> {data?.timestamp}</p>
         </div>
       </div>
       {data.button?.content ? (
-        <button className="h-7 text-xs bg-gray-100 border border-gray-200 px-2 py-1 font-medium rounded-sm">
+        <button className="h-7 text-xs dark:bg-gray-700/50 dark:text-white dark:border-gray-400 bg-gray-100 border border-gray-200 px-2 py-1 font-medium rounded-sm">
           {data.button?.content}
         </button>
       ) : null}

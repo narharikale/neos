@@ -56,20 +56,20 @@ function Header() {
       </div>
 
       <div className="flex gap-2 dark:text-zinc-100 text-gray-800">
-        <InfoButton className="px-2 border rounded-md text-sm font-medium dark:border-gray-400 border-gray-300 dark:bg-zinc-800 bg-transparent">
+        <InfoButton className="px-2 border rounded-md text-xs font-medium dark:border-gray-500 border-gray-300 dark:bg-gray-800/50 bg-transparent">
           <>
             <HeartIcon className="text-pink-700" size={16} />
             <p>Sponsor</p>
           </>
         </InfoButton>
 
-        <InfoButton className="px-2 border rounded-md text-sm font-medium dark:border-gray-400 border-gray-300 dark:bg-zinc-800 bg-transparent">
+        <InfoButton className="px-2 border rounded-md text-xs font-medium dark:border-gray-500 border-gray-300 dark:bg-gray-800/50 bg-transparent">
           <>
             <BellIcon className="dark:text-gray-400 text-gray-600" size={16} />
             <p>Notifications</p>
           </>
         </InfoButton>
-        <InfoButton className="px-2 border rounded-md text-sm font-medium dark:border-gray-400 border-gray-300 dark:bg-zinc-800 bg-transparent">
+        <InfoButton className="px-2 border rounded-md text-xs font-medium dark:border-gray-500 border-gray-300 dark:bg-gray-800/50 bg-transparent">
           <>
             <RepoForkedIcon
               className="dark:text-gray-400 text-gray-600"
@@ -79,9 +79,9 @@ function Header() {
             <Pill content="5.9k" className="dark:bg-zinc-700/50 bg-gray-200" />
           </>
         </InfoButton>
-        <InfoButton className="px-2 border rounded-md text-sm font-medium  dark:border-gray-400 border-gray-300 dark:bg-zinc-800 bg-transparent">
+        <InfoButton className="px-2 border rounded-md text-xs font-medium  dark:border-gray-500 border-gray-300 dark:bg-gray-800/50 bg-transparent">
           <>
-            <StarIcon className="dark:text-gray-400 text-gray-600" size={16} />
+            <StarIcon className="dark:text-gray-300 text-gray-600" size={16} />
             <p>Star</p>
             <Pill content="86.7k" className="dark:bg-zinc-700/50 bg-gray-200" />
           </>
@@ -94,7 +94,7 @@ function Header() {
 function Tabs() {
   return (
     <nav className="bg-transparent border-b-1 dark:border-gray-700 border-gray-200">
-      <ul className="flex gap-2 list-none px-8">
+      <ul className="flex gap-1 list-none px-8">
         {navData.map((tab) => {
           return (
             <li
@@ -104,10 +104,15 @@ function Tabs() {
                 tab.active ? "border-b-3 border-[#fd8c73]" : ""
               )}
             >
-              <div className="flex gap-2 px-2 rounded-md text-base/8 items-center | text-[#0d1117] dark:text-zinc-100 hover:bg-[#818b981a] dark:hover:bg-[#212830]">
+              <div className="flex gap-1 px-2 rounded-md text-sm/8 items-center justify-center | text-[#0d1117] dark:text-zinc-100 hover:bg-[#818b981a] dark:hover:bg-[#212830]">
                 <span>{tab.icon}</span>
                 <p>{tab.name}</p>
-                <span>{tab.data}</span>
+                {tab.data ? (
+                  <Pill
+                    content={tab?.data}
+                    className="dark:bg-zinc-700/50 bg-gray-200"
+                  />
+                ) : null}
               </div>
             </li>
           );
